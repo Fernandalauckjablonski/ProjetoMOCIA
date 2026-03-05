@@ -1,6 +1,6 @@
 Conceitos Basicos
 - Identidade Eletronica (ler capitulo 2 tese) _ OK
-Nivelamento Linux
+- Nivelamento Linux
     - Assistir aulas Ubantu _ OK
     - Instalar Ubantu _ OK
     - Aula sobre comandos do terminal _ (3/8)
