@@ -1,0 +1,48 @@
+version: "3.7"
+services:
+ db:
+   image: mysql:8.0.19
+   command: '--default-authentication-plugin=mysql_native_password'
+   restart: always
+   ## para guardar a senha:
+    secrets:
+      - db-password
+   # para nao perdermos conteudos anteriores, adiciona-se:
+   volumes:
+      - db-data:/var/lib/mysql
+   networks:
+      - backend-network
+   # ate aqui
+   environment:
+      - MYSQL_DATABASE=exemple
+      ## mudamos isso: - MYSQL_ROOT_PASSWORD=password para isso:
+      - MYSQL_ROOT_PASSWORD_FILE=/run/secrets/db-password
+    
+ app:
+    build: app
+    restart: always
+    ## adicionamos:
+    secrets:
+      - db-password
+    # mais isso:
+    networks:
+      - backend-network
+      - frontend-network
+
+ web:
+    build: web
+    restart: always
+    ports:
+      - 80:80
+    # e isso:
+    networks:
+      - frontend-network
+volumes:
+  db-data:
+## e isso:
+secrets:
+  db-password:
+    file: db/password.txt
+networks:
+  backend-network:
+  frontend-network:
