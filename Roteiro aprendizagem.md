@@ -11,7 +11,7 @@ Conceitos Basicos - OK
       
 Dimensao de Programacao - semana 2 e 3
 - GIT
-    - Assistir aulas _ (5/8)
+    - Assistir aulas _ (6/8)
 - Docker + Python
     - Ler e reproduzir no Git Lab
 - Programacao Python
