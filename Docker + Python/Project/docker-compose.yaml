@@ -21,6 +21,11 @@ services:
  app:
     build: app
     restart: always
+    ### adicionar:
+    volumes:
+      - ./app/src:/code
+    ports:
+      - 5678:5678
     ## adicionamos:
     secrets:
       - db-password
