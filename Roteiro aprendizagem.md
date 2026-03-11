@@ -13,7 +13,7 @@ Dimensao de Programacao - semana 2 e 3
 - GIT
     - Assistir aulas _ OK (8/8)
 - Docker + Python
-    - Ler e reproduzir no Git Lab _ (0/3)
+    - Ler e reproduzir no Git Lab _ (1/3)
 - Programacao Python
     - Aula Python 3
     - Exercicios Python 3
