@@ -15,7 +15,7 @@ Dimensao de Programacao - semana 2 e 3
 - Docker + Python
     - Ler e reproduzir no Git Lab _ OK (3/3)
 - Programacao Python
-    - Aula Python 3
+    - Aula Python 3 _ (1/39)
     - Exercicios Python 3
     - Aula Flasck e reproduzir exemplos
 - Python + Criptografia
